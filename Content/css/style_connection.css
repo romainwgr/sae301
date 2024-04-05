@@ -1,0 +1,184 @@
+body {
+  background-color: #293358;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #293358;
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  width: 220px;
+  padding: 4%;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin: 40px 0 50px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.input-container {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 5px;
+  border: solid #293358 1px;
+  margin-top: 3px;
+  outline: none;
+  padding: 10px;
+  transition: border 0.5s;
+}
+
+input:focus {
+  border: solid #8b7d6d 1px;
+}
+
+form {
+  margin: 10px;
+}
+
+.mdp-oublie {
+  text-align: end;
+  font-size: 10px;
+  margin: 3px 0;
+}
+
+.mdp-oublie:hover {
+  color: #8b7d6d;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px;
+}
+
+.connecter {
+  background-color: #293358;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 13px 20px;
+}
+
+.connecter:hover {
+  background-color: #8b7d6d;
+  cursor: pointer;
+}
+
+.error_connection h1 {
+  color: white;
+}
+
+nav {
+  background-color: white;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  position: fixed;
+}
+nav img {
+  width: 90%;
+  position: absolute;
+  top: 75px;
+  left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%);
+}
+
+nav img:hover {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+}
+nav li {
+  list-style: none;
+  text-transform: uppercase;
+  color: #243871;
+}
+
+nav li:hover {
+  color: #927e6e;
+  cursor: pointer;
+}
+
+.profil {
+  position: absolute;
+  top: 25px;
+  left: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+}
+
+.profil #gauche {
+  width: 100px;
+}
+
+.profil #gauche .info {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.profil #gauche .info > h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.profil #gauche > h6 {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: right;
+}
+
+.profil #nom {
+  text-transform: uppercase;
+}
+
+.profil #droite {
+  width: 25%;
+}
+.profil #droite img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.test {
+  background-color: #927e6e;
+  height: 300px;
+}
