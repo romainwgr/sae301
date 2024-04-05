@@ -1,0 +1,365 @@
+body {
+  background-color: #293358;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+main {
+  padding-left: 20%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  width: 70%;
+}
+
+.staffs,
+.dashboard,
+.affectation,
+.need {
+  margin-left: 10%;
+}
+
+h1 {
+  padding-left: 5px;
+}
+
+nav {
+  background-color: white;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  position: fixed;
+  top: 0;
+}
+nav img {
+  width: 90%;
+  position: absolute;
+  top: 75px;
+  left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%);
+}
+
+nav img:hover {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+nav li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: #293358;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #927e6e;
+  cursor: pointer;
+}
+
+.profil {
+  position: absolute;
+  top: 25px;
+  left: 85%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+}
+
+.profil #gauche .info {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+}
+
+.profil #gauche .info > h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.profil #gauche > h6 {
+  font-size: 12px;
+  padding-right: 3px;
+  margin: 0;
+  color: white;
+  text-align: right;
+}
+
+.profil #nom {
+  text-transform: uppercase;
+}
+
+.profil #droite {
+  width: 25%;
+}
+.profil #droite img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.test {
+  background-color: #927e6e;
+  height: 300px;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#formulaireTrier {
+  margin: 25px 0 0 8px;
+}
+
+button,
+input[type="submit"] {
+  background-color: #293358;
+  border: solid #927e6e 1px;
+  color: #927e6e;
+  border-radius: 50px;
+  padding: 13px 20px;
+}
+
+#champsChercher {
+  width: 170px;
+  text-align: center;
+}
+
+#ajouterEnseignant {
+  color: white;
+  background-color: #927e6e;
+}
+
+input {
+  border-radius: 50px;
+  padding: 13px 20px;
+  border: none;
+}
+
+.gauche input[type="text"] {
+  border-radius: 50px 0 0 50px;
+}
+
+.gauche button[type="submit"] {
+  border-radius: 0 50px 50px 0;
+  padding-left: -5px;
+}
+
+.menu > .gauche {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+select {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+select {
+  font-size: 16px;
+  background-color: white;
+  color: #293358;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-container.active {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #293358b9;
+}
+
+.modal {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 70%;
+  padding: 30px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #293358;
+}
+
+.close-modal {
+  padding: 8px 13px;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.modal select {
+  border: solid #a0a0a0 1px;
+}
+
+.modal input {
+  border: solid #a0a0a0 1px;
+}
+
+.modaladd {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  height: 90%;
+}
+
+.modal label {
+  padding-left: 5px;
+}
+
+.l1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l1 .inptcontent {
+  width: 47%;
+}
+
+.inptcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ajustez la largeur du label "Email" en fonction de vos besoins */
+
+.l4,
+.l5 {
+  display: block; /* Par défaut, les afficher */
+}
+
+.hidden {
+  display: none; /* Masquer */
+}
+
+table {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #293358;
+  text-align: left;
+  padding: 8px;
+  vertical-align: center;
+}
+
+th {
+  background-color: #293358;
+  font-size: 15px;
+}
+
+.alternate-row {
+  background-color: #293358;
+}
+
+.alternate-row:nth-child(even) {
+  background-color: #37456c;
+}
+
+table .btn {
+  text-align: center;
+}
+
+table a,
+table i {
+  color: #927e6e;
+  font-size: 20px;
+}
+
+.fa-pen-to-square {
+  position: absolute;
+  left: 86%;
+}
+
+.fa-xmark {
+  font-size: 26px;
+  position: absolute;
+  left: 88%;
+}
+
+#message {
+  border: solid #37456c 2px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 800px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard .l1 {
+  width: 760px;
+}
+
+.dashboard .l2 {
+  width: 760px;
+}
+
+canvas {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0;
+  padding: 20px;
+}
+
+#myBarChart {
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  /* autres styles pour le modal */
+}
